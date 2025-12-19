@@ -1170,6 +1170,7 @@ background: linear-gradient(to right, #fff, #4364F7);
   display: flex;
   gap: 3rem;
   list-style: none;
+  align-items: center;
 }
 
 .nav ul li a {
