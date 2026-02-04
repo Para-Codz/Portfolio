@@ -485,35 +485,109 @@ body {
 /* Section 4 */
 
 
-.tool-container {
+/* Tech Section */
+.tech-section {
+  padding: 6rem 2rem;
+  background-color: #f3f4f6;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #111827;
+}
+
+.tech-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #111827;
+  border-bottom: 4px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Grid */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual Card */
+.tech-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
-  padding-left: 5rem;
-  background-color: var(--body-background-color);
-  margin-top: 10rem;
-  gap: 200px;
-  /* start hidden */
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 2s ease;
-}
-
-/* class added on scroll */
-.tool-container.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-
-
-
-
-
-.tool-kitImage {
-  transition: all 1s;
+  justify-content: center;
+  font-size: 3rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
-  width: 100%;
-    max-width: 300px;
+}
+
+.tech-card i {
+  font-size: 3rem;
+  color: #3b82f6;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.tech-card:hover {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  background-color: #e0f2fe;
+}
+
+/* Icon bounce slightly on hover */
+.tech-card:hover i {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Tooltip */
+.tech-card::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111827;
+  color: #ffffff;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Show tooltip on hover */
+.tech-card:hover::after {
+  opacity: 1;
+  bottom: -3.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-card {
+    width: 100px;
+    height: 100px;
+  }
+  .tech-card i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .tech-card {
+    width: 90px;
+    height: 90px;
+  }
+  .tech-card i {
+    font-size: 2rem;
+  }
 }
 
 
@@ -552,96 +626,160 @@ body {
   line-height: 1.5;
   font-weight: 600;
 }
+.tool-container {
+  max-width: 1200px;
+  margin: 10rem auto 0;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 2rem;
 
-/* section-5 */
-
-
-.toolkit {
-  margin-top: 10rem;
-  text-align: center;
-
-  /* start hidden */
+  /* animation */
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transform: translateX(-60px);
+  transition: all 1.2s ease;
 }
 
-/* class added on scroll */
-.toolkit.show {
+.tool-container.show {
   opacity: 1;
-  animation: glow 0.5s infinite; /* glow starts */
-}
-
-@keyframes glow {
-  0%, 100% { text-shadow: 0 0 5px #f00; }
-  50% { text-shadow: 0 0 20px #0080ff; }
+  transform: translateX(0);
 }
 
 
-
-
-.toolkit h2 {
-  margin-bottom: 5rem;
-  font-size: 3.5rem;
-  font-weight: 700;
+.tool-kitImage {
+  max-width: 260px;
+  background: #fee2e2;
+  border-radius: 24px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
 }
 
-.toolkit-sub {
-  color: var(--primary-text-color);
-  margin-bottom: 4rem;
-  font-size: 2.5rem;
+.tool-kitImage:hover {
+  transform: translateY(-6px);
 }
 
-.toolkit-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 3rem;
-  padding: 0 3rem;
-  padding: 6rem;
+.tool-kitImage img {
+  width: 100%;
+  object-fit: contain;
 }
 
+.tool-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0;
+  text-align: left;
+  max-width: 600px;
+}
+.tool-text p {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #4b5563;
+}
 @media (max-width: 768px) {
-  .toolkit-grid {
+  .tool-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tool-text {
+    text-align: center;
+  }
+}
+
+/* section 5 */
+
+.skills-section {
+  padding: 80px 20px;
+  background-color: #f3f4f6;/* deep navy / dark */
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0f172a; 
+}
+
+.skills-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #000b18;
+  margin-bottom: 50px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.skill-card {
+  background-color: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+
+/* responsive */
+/* Tablet */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .skills-title {
+    font-size: 28px;
+  }
+
+  .skills-subtitle {
+    font-size: 14px;
+  }
+
+  .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 25px;
   }
 }
 
 
-.tool-card {
-  background: var(--white);
-  padding: 3rem 2rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 12px 32px rgba(0, 128, 255, 0.25);
-  transition: 0.3s ease;
-  cursor:pointer;
-background: linear-gradient(to right, #fff, #4364F7);
-
-
-  
-}
-
-.tool-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 18px 45px rgba(0, 128, 255, 0.35);
-}
-
-.tool-card i {
-  font-size: 3rem;
-  color: var(--solid-black-color);
-  margin-bottom: 1rem;
-}
-
-.tool-card h3 {
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--solid-black-color);
-}
-
-.tool-card p {
-  color: var(--solid-black-color);
-  margin-top: .5rem;
-  font-weight: 600;
-}
 
 /* section-6 */
 
@@ -768,6 +906,9 @@ background: linear-gradient(to right, #fff, #4364F7);
   min-width: calc(33.333% - 20px); 
   /* Show 3 cards only */
 }
+
+
+
 
 /* section-7 */
 
@@ -2227,4 +2368,9 @@ textarea:focus {
     .section-2__main__introduction h1 {
         animation: none;
     }
+}
+
+.section-2__main__mypict img {
+  height: 45rem;
+  width: 45rem;
 }
