@@ -18,33 +18,6 @@ window.addEventListener('scroll', () => {
 
 
 
-//2
-const container = document.querySelector('.tool-container');
-
-window.addEventListener('scroll', () => {
-  const rect = container.getBoundingClientRect();
-  // if (rect.top < window.innerHeight - 400) {
-  //   container.classList.add('show');
-  // }
-});
-
-//3
-const toolkit = document.querySelector('.toolkit');
-
-window.addEventListener('scroll', () => {
-  const rect = toolkit.getBoundingClientRect();
-  
-  if(rect.top < window.innerHeight - 100 && !toolkit.classList.contains('show')) {
-    toolkit.classList.add('show');
-
-    // remove glow animation after 4 seconds
-    setTimeout(() => {
-      toolkit.style.animation = 'none'; 
-    }, 1500);
-  }
-});
-
-
 
 
 // EMAIL VIA GMAIL
@@ -122,7 +95,7 @@ window.addEventListener('resize', () => {
   }
 });
 
-// Improve touch experience for cards
+// // Improve touch experience for cards
 // document.querySelectorAll('.card, .tool-card, .project-card').forEach(card => {
 //   card.addEventListener('touchstart', function() {
 //     this.style.transform = 'scale(0.98)';
@@ -133,5 +106,5 @@ window.addEventListener('resize', () => {
 //   });
 // });
 
-import { inject } from '@vercel/analytics';
-inject();
+// import { inject } from '@vercel/analytics';
+// inject();
