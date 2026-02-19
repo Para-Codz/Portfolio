@@ -132,3 +132,6 @@ window.addEventListener('resize', () => {
 //     this.style.transform = '';
 //   });
 // });
+
+import { inject } from '@vercel/analytics';
+inject();
