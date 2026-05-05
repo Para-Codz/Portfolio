@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
       current = section.getAttribute('id');
     }
   });
-
+  
   navLinks.forEach(link => {
     link.classList.remove('active');
     if (link.getAttribute('data-section') === current) {
@@ -167,7 +167,7 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
   let name = encodeURIComponent(this.elements.name.value);
   let email = encodeURIComponent(this.elements.email.value);
   let message = encodeURIComponent(this.elements.message.value);
-
+  
   window.open(
     `https://mail.google.com/mail/?view=cm&fs=1&to=georgeparadise4u@gmail.com&su=Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`,
     "_blank"
@@ -177,13 +177,13 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
 // WHATSAPP FORM SUBMIT
 document.getElementById("whatsappForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
+  
   let name = this.elements.name.value;
   let email = this.elements.email.value;
   let message = this.elements.message.value;
-
+  
   let whatsappMessage = `Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
-
+  
   window.open(
     `https://wa.me/2348037998324?text=${whatsappMessage}`,
     "_blank"
@@ -210,7 +210,7 @@ function copyToClipboard(text, message) {
   document.body.appendChild(textArea);
   textArea.focus();
   textArea.select();
-
+  
   try {
     document.execCommand('copy');
     showCopyNotification(message);
@@ -218,7 +218,7 @@ function copyToClipboard(text, message) {
     console.error('Failed to copy text: ', err);
     showCopyNotification('Copy failed - please try again');
   }
-
+  
   document.body.removeChild(textArea);
 }
 
