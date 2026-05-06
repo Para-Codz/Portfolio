@@ -1521,10 +1521,7 @@ body.dark {
 } */
 
 
-body {
-  padding-left: 40px;
-  overflow-x: hidden;
-}
+/* Removed stray body left padding that caused extra layout space on right */
 
 /* .tech-stack-scroll {
   display: none;
