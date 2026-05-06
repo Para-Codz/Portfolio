@@ -457,7 +457,7 @@ body.light .hero-description {
 /* Tech Stack */
 .tech-stack {
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .tech-stack-scroll {
