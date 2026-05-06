@@ -1523,4 +1523,5 @@ body.dark {
 
 body {
   padding-left: 40px;
+  overflow: hidden;
 }
