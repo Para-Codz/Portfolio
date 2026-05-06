@@ -595,7 +595,7 @@ body.light .section-subtitle {
 }
 
 .about-card {
-  padding: clamp(24px, 4vw, 32px);
+  padding: clamp(28px, 5vw, 36px);
   border-radius: 16px;
   background: #0a0a14;
   border: 1px solid rgba(59, 130, 246, 0.3);
@@ -640,7 +640,7 @@ body.light .about-card p {
 }
 
 .skill-card {
-  padding: clamp(20px, 3vw, 24px);
+  padding: clamp(24px, 3vw, 30px);
   border-radius: 12px;
   border: 1px solid rgba(59, 130, 246, 0.3);
   background: #0a0a14;
@@ -696,6 +696,7 @@ body.light .projects-section {
 }
 
 .project-card {
+  padding: clamp(16px, 2vw, 20px);
   border-radius: 16px;
   overflow: hidden;
   background: #0a0a14;
@@ -720,7 +721,7 @@ body.light .project-card {
 }
 
 .project-content {
-  padding: clamp(20px, 3vw, 24px);
+  padding: clamp(16px, 2vw, 20px);
 }
 
 .project-content h3 {
@@ -800,7 +801,7 @@ body.light .project-tag {
 }
 
 .contact-form-card {
-  padding: clamp(24px, 4vw, 32px);
+  padding: clamp(28px, 4vw, 36px);
   border-radius: 16px;
   background: #0d0d1a;
   border: 1px solid rgba(59, 130, 246, 0.3);
@@ -882,6 +883,10 @@ body.light .contact-form-card textarea {
 /* Social Connect */
 .social-connect {
   text-align: center;
+  padding: clamp(24px, 3vw, 30px);
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .connect-title {
@@ -980,7 +985,7 @@ body.light .social-icon.github svg {
 
 /* Footer */
 .footer {
-  padding: clamp(24px, 4vw, 32px) 0;
+  padding: clamp(28px, 4vw, 36px) 0;
   border-top: 1px solid rgba(59, 130, 246, 0.3);
 }
 
