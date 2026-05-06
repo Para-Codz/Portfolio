@@ -1525,3 +1525,7 @@ body {
   padding-left: 40px;
   overflow: hidden;
 }
+
+.tech-stack {
+  display: none;
+}
