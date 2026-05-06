@@ -1,9 +1,10 @@
 // CURSOR TRACKING
-const cursorBubble = document.getElementById('cursorBubble');
+const cursorBubble = document.querySelector('.cursor-bubble');
 document.addEventListener('mousemove', (e) => {
-  cursorBubble.style.left = e.clientX + 'px';
-  cursorBubble.style.top = e.clientY + 'px';
+  cursorBubble.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 });
+
+console.log(cursorBubble);
 
 // THEME TOGGLE
 const themeToggle = document.getElementById('themeToggle');
