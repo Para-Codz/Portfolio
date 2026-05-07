@@ -564,7 +564,6 @@ body.dark .tech-stack-scroll .github-icon {
 
 /* About Section */
 .about-section {
-  width: 100%;
   padding: clamp(60px, 10vw, 96px) 0;
   background: #0d0d1a;
 }
@@ -632,7 +631,6 @@ body.light .about-card p {
 
 /* Skills Section */
 .skills-section {
-  width: 100%;
   padding: clamp(60px, 10vw, 96px) 0;
 }
 
@@ -684,7 +682,6 @@ body.light .skill-card p {
 
 /* Projects Section */
 .projects-section {
-  width: 100%;
   padding: clamp(60px, 10vw, 96px) 0;
   background: #0d0d1a;
 }
@@ -790,7 +787,6 @@ body.light .project-tag {
 
 /* Contact Section */
 .contact-section {
-  width: 100%;
   padding: clamp(60px, 10vw, 96px) 0;
 }
 
@@ -887,7 +883,6 @@ body.light .contact-form-card textarea {
 
 /* Social Connect */
 .social-connect {
-  width: 100%;
   text-align: center;
   padding: clamp(24px, 3vw, 30px);
   border-radius: 18px;
@@ -991,7 +986,6 @@ body.light .social-icon.github svg {
 
 /* Footer */
 .footer {
-  width: 100%;
   padding: clamp(28px, 4vw, 36px) 0;
   border-top: 1px solid rgba(59, 130, 246, 0.3);
 }
