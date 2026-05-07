@@ -1533,3 +1533,6 @@ body.dark {
   display: none;
 } */
 
+body {
+  overflow-x: hidden;
+}
