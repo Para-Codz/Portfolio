@@ -66,64 +66,64 @@ const projects = [
     description: "A lightweight recipe-sharing platform built for easy access to Nigerian dishes with search and filtering features.",
     tags: ["HTML", "CSS", "JavaScript", "API Integration"],
     image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://dishcovery-cmbl.vercel.app/",
+    repoUrl: "https://github.com/Ogfejiro/Dishcovery"
   },
   {
     title: "QuickCalc",
     description: "A modern, responsive calculator with advanced mathematical functions and keyboard support for quick calculations.",
     tags: ["HTML", "CSS", "JavaScript", "Math Logic"],
     image: "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://quic-calc.vercel.app/",
+    repoUrl: "https://github.com/Para-Codz/QuicCalc"
   },
   {
     title: "Guess King",
     description: "An interactive number guessing game with multiple difficulty levels, score tracking, and engaging animations.",
     tags: ["HTML", "CSS", "JavaScript", "Game Logic"],
     image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://guess-king.vercel.app/",
+    repoUrl: "https://github.com/Para-Codz/GuessKing"
   },
   {
     title: "Vista Suites – Hotel Landing Page",
     description: "A clean, modern, and responsive hotel landing page showcasing luxury suites with user-friendly booking sections and elegant design.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://vista-suites.vercel.app/",
+    repoUrl: "https://github.com/Para-Codz/VistaSuites"
   },
   {
     title: "Counter Program",
     description: "A simple, interactive, and responsive counter program that lets users increment, decrement, and reset values with smooth animations and clean design.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://counter-program.vercel.app/",
+    repoUrl: "https://github.com/Para-Codz/CounterProgram"
   },
   {
     title: "Gidam Parks",
     description: "A responsive web project for Gidam Parks built with HTML, CSS, and JavaScript, featuring clean structure, smooth interactions, and a user-first design approach.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "UI/UX"],
     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://gidam-parks.vercel.app/",
+    repoUrl: "https://github.com/Para-Codz/GidamParks"
   },
   {
     title: "Luxe Store",
     description: "A modern e-commerce web app designed for a clean and smooth shopping experience. Users can browse products, view details, and interact with a stylish UI built for performance.",
     tags: ["HTML", "CSS", "JavaScript", "E-commerce", "UI/UX"],
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://luxe-store.vercel.app/",
+    repoUrl: "https://github.com/Para-Codz/LuxeStore"
   },
   {
     title: "FuelRadar",
     description: "A smart web app that helps users find the cheapest fuel stations nearby. It focuses on real-time discovery, location-based results, and a simple user experience.",
     tags: ["HTML", "CSS", "JavaScript", "Maps", "Geolocation"],
     image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    repoUrl: "#"
+    liveUrl: "https://fuelradar.vercel.app/",
+    repoUrl: "https://github.com/Para-Codz/FuelRadar"
   }
 ];
 

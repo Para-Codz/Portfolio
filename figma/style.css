@@ -112,14 +112,12 @@ body.light {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
   width: 100%;
 }
 
 .container-small {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
   width: 100%;
 }
 
@@ -1327,11 +1325,6 @@ body.light .footer-phone {
 
 /* Mobile: 320px - 480px */
 @media (max-width: 480px) {
-  .container,
-  .container-small {
-    padding: 0 16px;
-  }
-  
   .hero-section {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -1415,12 +1408,6 @@ body.light .footer-phone {
   .image-container {
     width: min(220px, 80vw);
     height: min(220px, 80vw);
-  }
-  
-  /* Even smaller containers */
-  .container,
-  .container-small {
-    padding: 0 12px;
   }
   
   /* Reduce hero spacing */
