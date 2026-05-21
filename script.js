@@ -391,7 +391,7 @@
         const whatsappMessage = 'Name: ' + name + '%0AEmail: ' + email + '%0A%0A' + message;
 
         window.open(
-          'https://wa.me/2348037998324?text=' + whatsappMessage,
+          'https://wa.me/2349033173219?text=' + whatsappMessage,
           '_blank'
         );
       });
