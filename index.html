@@ -1,647 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradise George</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paradise George - Frontend Developer Portfolio. Building clean, responsive, and user-friendly web experiences." />
+  <title>Paradise George - Frontend Developer Portfolio</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
 <link rel="manifest" href="Favicon/site.webmanifest">
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-
-     <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-
-<link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- <script type="module" src="/src/main.tsx"></script> -->
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!--__ Navigation-bar section__  -->
-
-    <!-- <Section class="section-1">
-        <header class="section-1__header">
-            <img src="images/ChatGPT Image Nov 12, 2025, 10_36_23 AM-fotor-bg-remover-2025111210562.png" alt="My logo" height="30px" class="logo-img">
-            <h2>Paradise George</h2>
-            <nav class="section-1__header__nav">
-                <ul>
-                    <li><a class="nava" href="#home">About</a></li>
-                    <li><a class="nava" href="#toolkit" class="Skills">Skills</a></li>
-                    <li><a class="nava" href="#projects">Projects</a></li>
-                    <li><a class="nava" href="#contact">Contact</a></li>
-                </ul>
-                
-            </nav>
-
-          
-
-        </header>
-    </Section> -->
-
-      <header class="header">
-  <div class="logo">Paradise</div>
-
-  <!-- Hamburger Button -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
+  <!-- Bubble Cursor (Desktop only) -->
+  <div class="bubble-follower" id="bubbleFollower">
+    <div class="bubble-shine"></div>
   </div>
 
-  <!-- Navigation -->
-  <nav class="nav" id="navMenu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <div class="logo" data-scroll-to="home">Paradise</div>
+
+      <div class="nav-links">
+        <a class="nav-link active" data-section="home" data-scroll-to="home">Home</a>
+        <a class="nav-link" data-section="about" data-scroll-to="about">About</a>
+        <a class="nav-link" data-section="skills" data-scroll-to="skills">Skills</a>
+        <a class="nav-link" data-section="projects" data-scroll-to="projects">Projects</a>
+        <a class="nav-link" data-section="contact" data-scroll-to="contact">Contact</a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+
+      <div class="mobile-controls">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+          <svg class="icon-sun-m" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon-m" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
   </nav>
-</header>
 
+  <!-- ================= MOBILE MENU ================= -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-nav-link active" data-section="home" data-scroll-to="home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a class="mobile-nav-link" data-section="about" data-scroll-to="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <span>About</span>
+    </a>
+    <a class="mobile-nav-link" data-section="skills" data-scroll-to="skills">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      <span>Skills</span>
+    </a>
+    <a class="mobile-nav-link" data-section="projects" data-scroll-to="projects">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+      <span>Projects</span>
+    </a>
+    <a class="mobile-nav-link" data-section="contact" data-scroll-to="contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span>Contact</span>
+    </a>
 
-    <!--__ Hero section__  -->
-
-
-    <section class="section-2" id="home">
-        <main class="section-2__main">
-
-
-            <div class="section-2__main__intro">
-              <div class="section-2__main__introduction animate-fade-slide">
-                <h1>Hi, I'm Paradise <br>Samuel George</h1>
-
-                    <div class="section-2__main__about">
-                        <p><b> A Frontend Developer.</b></p>
-                   <h4>Hi, I’m Paradise Samuel George, a Frontend Developer focused on building clean, responsive, and user-friendly web experiences. I create websites and applications that look great, work well, and solve real problems.</h4>
-                      </div>
-
-                    <div class="buttons">
-                        <a href="#projects" class="btn animate-fade-slide delay-1">View My Projects</a>
-                        <a href="https://wa.link/g1tsqk" target="_blank" class="btn btn-secondary animate-fade-slide delay-2"><i class="ph-fill ph-whatsapp-logo"></i> Contact Me </a>
-                    </div>
-                    
-
-              </div>  
-            </div>
-
-
-            
-            <div class="section-2__main__mypict">
-                <img src="images/paradise-pics.png" alt="Portrait of Paradise Samuel George" class="hero-img">
-            </div>
-
-        </main>
-       
-    </section>
-
-
-
-    <!-- About me section -->
-
-    <section class="section-3" id="About">
-        <div class="prof-section__container">
-            
-            <div class="prof-section__container--2">
-                <h2>Professional Summary</h2>
-                <div class="prof-section__container--2__1">
-                    <h4>Hi, I’m Paradise Samuel George, a passionate Frontend Developer dedicated to building clean, intuitive, and user-friendly web experiences. I specialize in crafting responsive websites and web applications that not only look great but also provide seamless functionality.</h4>
-                </div>
-
-                <h2>My Approach</h2>
-                <div class="prof-section__container--card">
-                    <div class="card">
-                        <i class="ph-fill ph-paint-brush aproach-icon-1"></i>
-                        <h3>Modern UI/UX</h3>
-                        <p>Crafting sleek, intuitive interfaces that keep users engaged and delighted</p>
-                    </div>
-                    <div class="card">
-                        <i class="ph-bold ph-code aproach-icon-2"></i>
-                        <h3>Efficient Codebase</h3>
-                        <p>Writing clean, modular code built for growth and long-term stability</p>
-                    </div>
-                    <div class="card">
-                        <i class="ph-fill ph-rocket-launch aproach-icon-3"></i>
-                        <h3>High-Speed Experience</h3>
-                        <p>Delivering smooth, lightning-fast websites that perform flawlessly across devices</p>
-                    </div>
-                </div>
-
-            </div>   
+    <div class="mobile-theme-toggle">
+      <span class="mobile-theme-label">Theme</span>
+      <button class="theme-switch" id="themeSwitchMobile" aria-label="Toggle theme">
+        <div class="theme-switch-thumb">
+          <svg class="moon-thumb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun-thumb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </div>
-    </section>
-
-    <!-- section-4 -->
-     
-
-    <section class="tech-section" id="TechStack">
-  <div class="tech-container">
-    <h2>My Tech Stack</h2>
-    <div class="tech-grid">
-
-      <div class="tech-card" data-tooltip="HTML5 – Expert">
-        <i class="devicon-html5-plain colored"></i>
-      </div>
-
-      <div class="tech-card" data-tooltip="CSS3 – Expert">
-        <i class="devicon-css3-plain colored"></i>
-      </div>
-
-      <div class="tech-card" data-tooltip="JavaScript – Advanced">
-        <i class="devicon-javascript-plain colored"></i>
-      </div>
-
-      <div class="tech-card" data-tooltip="Responsive Designs">
-        <i class="ph-bold ph-device-tablet"></i>
-      </div>
-
-      <div class="tech-card" data-tooltip="Git ">
-        <i class="devicon-git-plain colored"></i>
-      </div>
-      <div class="tech-card" data-tooltip="Github">
-        <i class="devicon-github-original-wordmark colored"></i>
-      </div>
-      <div class="tech-card" data-tooltip="VS Code – Daily Use">
-        <i class="devicon-vscode-plain"></i>
-      </div>
-
-      <!-- Add more tools as needed -->
-      
+      </button>
     </div>
   </div>
-</section>
 
-
-
-<!-- section-5 -->
-
-
-<section class="skills-section" id="skills">
-  <div class="skills-container">
-    <h2 class="skills-title">Skills & Tools</h2>
-    <p class="skills-subtitle">
-      Technologies I use to build clean, responsive, and functional web experiences.
-    </p>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>HTML5</h3>
-        <p>Semantic markup, accessibility-focused structure.</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>CSS3</h3>
-        <p>Modern layouts, Flexbox, Grid, clean styling.</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>JavaScript (ES6)</h3>
-        <p>DOM manipulation, logic, and interactivity.</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>Responsive Design</h3>
-        <p>Mobile-first layouts across all screen sizes.</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>Git & GitHub</h3>
-        <p>Version control and collaboration workflow.</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>UI / UX Basics</h3>
-        <p>Clean interfaces with user-focused design.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- section-6 -->
-
-<!-- <section id="projects" class="projects">
-  <h2 class="section-title">My Projects</h2>
-  <p class="section-subtitle">
-    Here are some of the real-world and practice projects I’ve worked on so far.
-  </p>
-
-  
-  <div class="projects-wrapper">
-    <div class="projects-grid">
-
-     Project 1
-      <div class="project-card">
-          <img src="images/dISHCOVERY.png" alt="Dishcovery App">
-            <div class="project-content">
-            <h3>Dishcovery – Recipe App</h3>
-            <p>A lightweight recipe-sharing platform built for easy access to Nigerian dishes.</p>
-
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-
-        <a href="https://dishcovery-cmbl.vercel.app/" target="_blank" class="project-btn"><i class="ph ph-arrow-square-out project-btn--icon"></i>View Project</a>
-        <a href="https://github.com/Ogfejiro/Dishcovery" target="_blank" class="project-btn"><i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo</a>
-      </div>
-        </div>
-
-        Project 2
-      <div class="project-card">
-      <img src="images/QuicCALC.png" alt="Calculator program">
-      <div class="project-content">
-        <h3>QuickCalc</h3>
-        <p>Modern responsive portfolio showcasing my skills, projects, and journey as a frontend developer.</p>
-
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-
-        <a href="https://calculator-mw1b2ch40-paradise-georges-projects.vercel.app/" target="_blank" class="project-btn"><i class="ph ph-arrow-square-out project-btn--icon"></i>View Project</a>
-        <a href="https://github.com/Para-Codz/QuicCalc" target="_blank" class="project-btn"><i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo</a>
-      </div>
-    </div>
-
-  
-
-    Project 3
-    <div class="project-card">
-      <img src="images/gUESSmASTER.png" alt="Guessing game">
-      <div class="project-content">
-        <h3>Game Master</h3>
-        <p>Beautiful sign-up, login, and forget-password screens designed with clean UI principles.</p>
-
-        <div class="tags">
-          <span>Html</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-
-        <a href="#" class="project-btn"><i class="ph ph-arrow-square-out project-btn--icon"></i>View Project</a>
-        <a href="#" class="project-btn"><i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</section> -->
-
-
-<!-- section-6 - Updated with more projects -->
-<section id="projects" class="projects">
-  <h2 class="section-title">My Projects</h2>
-  <p class="section-subtitle">
-    Here are some of the real-world and practice projects I've worked on so far.
-  </p>
-
-  <div class="projects-wrapper">
-    <div class="projects-grid">
-
-      <!-- Project 1 - Original -->
-      <div class="project-card">
-        <img src="images/dISHCOVERY.png" alt="Dishcovery App">
-        <div class="project-content">
-          <h3>Dishcovery – Recipe App</h3>
-          <p>A lightweight recipe-sharing platform built for easy access to Nigerian dishes with search and filtering features.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>API Integration</span>
-          </div>
-
-          <div class="project-buttons">
-            <a href="https://dishcovery-cmbl.vercel.app/" target="_blank" class="project-btn">
-              <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-            </a>
-            <a href="https://github.com/Ogfejiro/Dishcovery" target="_blank" class="project-btn">
-              <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 - Original -->
-      <div class="project-card">
-        <img src="images/QuicCALC.png" alt="Calculator program">
-        <div class="project-content">
-          <h3>QuickCalc</h3>
-          <p>A modern, responsive calculator with advanced mathematical functions and keyboard support for quick calculations.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Math Logic</span>
-          </div>
-
-          <div class="project-buttons">
-            <a href="https://quic-calc.vercel.app/" target="_blank" class="project-btn">
-              <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-            </a>
-            <a href="https://github.com/Para-Codz/QuicCalc" target="_blank" class="project-btn">
-              <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 - Original -->
-      <div class="project-card">
-        <img src="images/gUESSmASTER.png" alt="Guessing game">
-        <div class="project-content">
-          <h3>Guess King</h3>
-          <p>An interactive number guessing game with multiple difficulty levels, score tracking, and engaging animations.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Game Logic</span>
-          </div>
-
-          <div class="project-buttons">
-            <a href="https://guess-king.vercel.app/" target="_blank" class="project-btn">
-              <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-            </a>
-            <a href="https://github.com/Para-Codz/GuessKing" target="_blank" class="project-btn">
-              <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Project 4 - Vista Suites -->
-      <div class="project-card">
-        <img src="images/Vsta suits img.png" alt="Vista Suites Hotel Website">
-        <div class="project-content">
-          <h3>Vista Suites – Hotel Landing Page</h3>
-          <p>A clean, modern, and responsive hotel landing page showcasing luxury suites with user-friendly booking sections and elegant design.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Responsive Design</span>
-          </div>
-
-          <div class="project-buttons">
-            <a href="https://vista-suites.vercel.app/" target="_blank" class="project-btn">
-              <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-            </a>
-            <a href="https://github.com/Para-Codz/Vista-Suites" target="_blank" class="project-btn">
-              <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5 -->
-
-
-      <div class="project-card">
-        <img src="images/counter.png" alt="Counter Program Screenshot">
-        <div class="project-content">
-          <h3>Counter Program</h3>
-          <p>A simple, interactive, and responsive counter program that lets users increment, decrement, and reset values with smooth animations and clean design.</p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Responsive Design</span>
-          </div>
-
-          <div class="project-buttons">
-            <a href="https://counter-program.pxxl.click/" target="_blank" class="project-btn">
-              <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-            </a>
-            <a href="https://github.com/Para-Codz/Counter-Program" target="_blank" class="project-btn">
-              <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card"> 
-        <img src="images/Gidam parks.png" alt="Gidam Parks Website Screenshot">
-        <div class="project-content">
-          <h3>Gidam Parks</h3>
-          <p>
-            A responsive web project for Gidam Parks built with HTML, CSS, and JavaScript, featuring clean structure, smooth interactions, and a user-first design approach.
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-blur-1"></div>
+    <div class="hero-blur-2"></div>
+    <div class="hero-container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">
+            <span class="gradient">Paradise</span><br/>George
+          </h1>
+          <p class="hero-role">A Frontend Developer.</p>
+          <p class="hero-desc">
+            Hi, I'm Paradise George, a Frontend Developer focused on building clean,
+            responsive, and user-friendly web experiences. I create websites and applications
+            that look great, work well, and solve real problems.
           </p>
-
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Responsive Design</span>
-            <span>UI/UX</span>
+          <div class="hero-buttons">
+            <button class="btn btn-primary btn-glow" data-scroll-to="projects">View My Projects</button>
+            <button class="btn btn-outline" data-scroll-to="contact">Contact Me</button>
           </div>
+          <div class="tech-row" id="techRow"></div>
+        </div>
 
-          <div class="project-buttons">
-            <a href="https://gidam-parks-and-gardens.pxxl.click/" target="_blank" class="project-btn">
-              <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-            </a>
-            <a href="https://github.com/Para-Codz/Gidam-Parks-and-Gardens" target="_blank" class="project-btn">
-              <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-            </a>
+        <div class="hero-profile fade-in">
+          <div class="profile-wrapper">
+            <div class="profile-glow"></div>
+            <div class="profile-img">
+                <img src="images/prof.png" alt="">
+              <div class="profile-inner">
+                <div class="profile-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="available-badge">
+              <div class="available-dot"></div>
+              <span class="available-text">Available for work</span>
+            </div>
           </div>
         </div>
       </div>
-
-
-      <div class="project-card"> 
-  <img src="images/Luxe store.png" alt="Luxe Store Website Screenshot">
-
-  <div class="project-content">
-    <h3>Luzxe Store</h3>
-    <p>
-      A modern e-commerce web app designed for a clean and smooth shopping experience. 
-      Users can browse products, view details, and interact with a stylish UI built for performance.
-    </p>
-
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>E-commerce</span>
-      <span>UI/UX</span>
     </div>
 
-    <div class="project-buttons">
-      <a href="https://luxe-store.pxxl.click/" target="_blank" class="project-btn">
-        <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-      </a>
-
-      <a href="https://github.com/Para-Codz/Luxe-store" target="_blank" class="project-btn">
-        <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-      </a>
+    <div class="scroll-indicator">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
     </div>
-  </div>
-</div>
+  </section>
 
+  <div class="section-divider"></div>
 
-
-<div class="project-card"> 
-  <img src="images/fuelradar.png" alt="FuelRadar Website Screenshot">
-
-  <div class="project-content">
-    <h3>FuelRadar</h3>
-    <p>
-      A smart web app that helps users find the cheapest fuel stations nearby. 
-      It focuses on real-time discovery, location-based results, and a simple user experience.
-    </p>
-
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Maps</span>
-      <span>Geolocation</span>
+  <!-- ================= PROFESSIONAL SUMMARY ================= -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <h2 class="section-title">Professional Summary</h2>
+      <div class="cards-grid cards-3" id="summaryGrid"></div>
     </div>
+  </section>
 
-    <div class="project-buttons">
-      <a href="https://fuelradar.pxxl.click/" target="_blank" class="project-btn">
-        <i class="ph ph-arrow-square-out project-btn--icon"></i>View Project
-      </a>
+  <div class="section-divider"></div>
 
-      <a href="https://github.com/Para-Codz/FuelRadar" target="_blank" class="project-btn">
-        <i class="ph-fill ph-github-logo project-btn--icon"></i>View Repo
-      </a>
+  <!-- ================= TECH STACK ================= -->
+  <section class="section" id="skills">
+    <div class="section-container">
+      <h2 class="section-title">My Tech Stack</h2>
+      <p class="section-subtitle">Technologies I use to build clean, responsive, and functional web experiences.</p>
+      <div class="cards-grid cards-tech" id="techGrid"></div>
     </div>
-  </div>
-</div>
+  </section>
 
+  <div class="section-divider"></div>
 
-      
-
-
-      
-
-
-
-
-     
-
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="section-container">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Here are some of the real-world and practice projects I've worked on so far.</p>
+      <div class="cards-grid cards-projects" id="projectsGrid"></div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <div class="section-divider"></div>
 
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <h2 class="section-title center">Contact Me</h2>
 
-<!-- section-7 -->
+      <div class="cards-grid cards-contact">
+        <!-- Email Form -->
+        <div class="contact-card">
+          <h3 class="contact-title blue">Email Me</h3>
+          <form id="emailForm">
+            <div class="form-group">
+              <input class="form-input" id="emailName" type="text" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+              <input class="form-input" id="emailEmail" type="email" placeholder="Your Email" required/>
+            </div>
+            <div class="form-group">
+              <textarea class="form-textarea" id="emailMessage" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit btn-submit-blue btn-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Email
+            </button>
+          </form>
+        </div>
 
+        <!-- WhatsApp Form -->
+        <div class="contact-card">
+          <h3 class="contact-title green">Message Me on WhatsApp</h3>
+          <form id="whatsappForm">
+            <div class="form-group">
+              <input class="form-input" id="waName" type="text" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+              <input class="form-input" id="waEmail" type="email" placeholder="Your Email" required/>
+            </div>
+            <div class="form-group">
+              <textarea class="form-textarea" id="waMessage" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit btn-submit-green btn-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Send WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
 
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Contact Me</h2>
+      <!-- Socials -->
+      <div class="socials-card">
+        <h3 class="socials-title">Let's Stay Connected.</h3>
+        <p class="socials-subtitle">Connect With Me On My Socials</p>
+        <div class="socials-grid" id="socialsGrid"></div>
 
-  <div class="contact-grid">
-
-    <!-- EMAIL CONTACT FORM -->
-    <div class="contact-box">
-      <h3>Email Me</h3>
-      <form id="emailForm">
-        <input type="text" id="emailName" placeholder="Your Name" required>
-        <input type="email" id="emailEmail" placeholder="Your Email" required>
-        <textarea id="emailMessage" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn gmail-btn">Send Email</button>
-      </form>
+        <div class="contact-info">
+          <button class="contact-info-btn" data-copy="georgeparadise4u@gmail.com">
+            <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>georgeparadise4u@gmail.com</span>
+          </button>
+          <button class="contact-info-btn" data-copy="09033173219">
+            <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>09033173219</span>
+          </button>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- WHATSAPP CONTACT FORM -->
-    <div class="contact-box">
-      <h3>Message Me on WhatsApp</h3>
-      <form id="whatsappForm">
-        <input type="text" id="waName" placeholder="Your Name" required>
-        <input type="email" id="waEmail" placeholder="Your Email" required>
-        <textarea id="waMessage" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn whatsapp-btn"> <i class="ph-fill ph-whatsapp-logo"></i> Send WhatsApp</button>
-      </form>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">© 2026 Paradise George. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://x.com/ParadiseGe41509" target="_blank" rel="noopener noreferrer" class="footer-social" style="background:#1da1f2;color:white">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://github.com/para-Codz" target="_blank" rel="noopener noreferrer" class="footer-social" style="background:#ffffff;color:black">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://wa.me/2348037998324 " target="_blank" rel="noopener noreferrer" class="footer-social" style="background:#25d366;color:white">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+        <span class="footer-phone">+234 803 799 8324</span>
+      </div>
     </div>
-
-  </div>
-</section>
-
-<!-- section-8 -->
-
-<section class="connection">
-  <h2>Let's Stay Conneted. 
-    <i class="ph-fill ph-plugs-connected"></i>
-  </h2>
-  <div class="socials">
-    <h3>Connect With Me On My Socials</h3>
-    <div class="social-icon">
-      <a href="https://x.com/ParadiseGe41509" target="_blank">
-        <i class="ph-fill ph-x-logo so1"></i>
-      </a>
-      
-      <a href="https://github.com/Para-Codz" target="_blank">
-        <i class="ph-fill ph-github-logo so2"></i>
-      </a>
-    <!-- <a href="">
-      <i class="ph-fill ph-youtube-logo so3"></i>
-    </a> -->
-    
-    </div>
-  </div>
-
-</section>
-
-<!-- section-9 -->
-
-<footer>
-    <p>© 2025 Paradise Samuel George. All rights reserved.</p>
-    <p id="folow-me">
-      Follow me: 
-      <a href="https://x.com/ParadiseGe41509" target="_blank" class="twitter">Twitter</a>  
-      <a href="https://github.com/Para-Codz" target="_blank" class="instagram">Github</a>  
-    </p>
-    <p>
-      Contact: 
-      <a href="tel:+2348037888324" class="phone.n">+2348037998324</a>
-    </p>
   </footer>
-
-
-
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-
-<script defer src="/_vercel/insights/script.js"></script>
-
-
-
 </body>
-</html> 
+</html>
