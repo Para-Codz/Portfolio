@@ -121,7 +121,47 @@
       image: 'https://plus.unsplash.com/premium_photo-1661962311915-916344dcba01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnVlbHxlbnwwfHwwfHx8MA%3D%3D',
       projectUrl: 'https://fuelradar.pxxl.click/',
       repoUrl: 'https://github.com/Para-Codz/FuelRadar'
-    }
+    },
+    {
+  title: 'Verde',
+  desc: 'A modern e-commerce web experience showcasing premium products with a clean, elegant interface. Built with HTML, CSS, and JavaScript, Verde focuses on smooth navigation, responsive design, and a seamless shopping journey with fast delivery and user-friendly interactions.',
+  tags: ['HTML', 'CSS', 'JavaScript', 'E-commerce', 'Responsive Design', 'UI/UX'],
+  image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  projectUrl: 'https://verde-sxlo.vercel.app/',
+  repoUrl: 'https://github.com/Para-Codz/Verde'
+},
+{
+  title: 'Obiri Restaurant & Lounge',
+  desc: 'A stylish and responsive restaurant website designed to showcase menu offerings, ambience, and customer experience. Built with HTML, CSS, and JavaScript, it features smooth navigation, modern layout, and a visually appealing interface tailored for food businesses.',
+  tags: ['HTML', 'CSS', 'JavaScript', 'Restaurant Website', 'Responsive Design', 'UI/UX'],
+  image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=250&fit=crop',
+  projectUrl: 'https://obiri-restaurant-lounge.vercel.app/',
+  repoUrl: 'https://github.com/Para-Codz/OBIRI-RESTAURANT-LOUNGE'
+},
+{
+  title: 'Ntige Pastries',
+  desc: 'A clean and inviting bakery website built to showcase pastry products, highlight brand identity, and attract customers. Developed with HTML, CSS, and JavaScript, it focuses on simplicity, responsiveness, and a warm user experience for food lovers.',
+  tags: ['HTML', 'CSS', 'JavaScript', 'Bakery Website', 'Responsive Design', 'UI/UX'],
+  image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=250&fit=crop',
+  projectUrl: 'https://ntige-pastries.vercel.app/',
+  repoUrl: 'https://github.com/Para-Codz/Ntige-Pastries'
+},
+{
+  title: 'Triple Crown',
+  desc: 'A modern and responsive business website designed with a strong visual structure and user-focused layout. Built using HTML, CSS, and JavaScript, it delivers smooth interactions and a professional interface suitable for brand presentation.',
+  tags: ['HTML', 'CSS', 'JavaScript', 'Business Website', 'Responsive Design', 'UI/UX'],
+  image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop',
+  projectUrl: 'https://triple-crown.vercel.app/',
+  repoUrl: 'https://github.com/Para-Codz/Triple-Crown'
+},
+{
+  title: 'ParaConvert',
+  desc: 'A lightweight and efficient file conversion tool that enables users to instantly convert images between formats such as JPG and PNG. Designed with a focus on performance and usability, it features real-time processing, responsive design, and a clean interface that ensures a seamless user experience across devices.',
+  tags: ['HTML', 'CSS', 'JavaScript', 'File Conversion', 'Responsive Design', 'UI/UX'],
+  image: 'https://plus.unsplash.com/premium_photo-1726079248086-ad6bec853f36?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  projectUrl: 'https://paraconvert.vercel.app/',
+  repoUrl: 'https://github.com/Para-Codz/ParaConvert'
+}
   ];
 
   const socials = [
