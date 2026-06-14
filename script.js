@@ -159,7 +159,7 @@
   desc: 'A lightweight and efficient file conversion tool that enables users to instantly convert images between formats such as JPG and PNG. Designed with a focus on performance and usability, it features real-time processing, responsive design, and a clean interface that ensures a seamless user experience across devices.',
   tags: ['HTML', 'CSS', 'JavaScript', 'File Conversion', 'Responsive Design', 'UI/UX'],
   image: 'https://plus.unsplash.com/premium_photo-1726079248086-ad6bec853f36?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  projectUrl: 'https://paraconvert.vercel.app/',
+  projectUrl: 'https://para-convert.vercel.app/',
   repoUrl: 'https://github.com/Para-Codz/ParaConvert'
 }
   ];
